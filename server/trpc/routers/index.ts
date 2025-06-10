@@ -13,6 +13,19 @@ export const appRouter = createTRPCRouter({
         greeting: `hello ${opts.input.text}`,
       };
     }),
+  teststream: baseProcedure
+    .input(
+      z.object({
+        text: z.string(),
+      }),
+    )
+    .subscription(async function* (opts) {
+      const { text } = opts.input;
+      for (let i = 0; i < 5; i++) {
+        yield `hello ${text} ${i}`;
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      }
+    }),
 });
 
 // export type definition of API
