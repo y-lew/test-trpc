@@ -1,4 +1,18 @@
+## This repository was generated based on the links below:
+
+- [Nuxt Installation Guide](https://nuxt.com/docs/getting-started/installation)
+- [tRPC Nuxt Setup](https://trpc-nuxt.pages.dev/setup/)
+
+&nbsp;  
+&nbsp;  
+&nbsp;  
+
+---
+
+Default Nuxt readme below:
+
 # Nuxt Minimal Starter
+
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
